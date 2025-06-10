@@ -32,7 +32,7 @@ public:
     }
     virtual uint64 GetThisPluginVersion() override
     {
-        return MAKE_VERSION_NUMBER_UINT64(0, 0, 1, 0);
+        return MAKE_VERSION_NUMBER_UINT64(0, 1, 1, 0);
     }
     virtual void InitStage_WhenPluginAPIDeemedCompatible() override
     {
