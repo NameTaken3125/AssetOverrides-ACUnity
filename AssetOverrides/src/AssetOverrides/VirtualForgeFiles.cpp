@@ -1325,12 +1325,9 @@ void DrawAssetOverridesInstructions()
                 }
             }
             };
-        static ImVec4 color_ModFolder(0.979f, 0.523f, 0.395f, 1.000f);
-        static ImVec4 color_Datapack(0.000f, 0.764f, 1.000f, 1.000f);
-        static ImVec4 color_LooseFile(0.425f, 0.780f, 0.392f, 1.000f);
-        ImGui::ColorEdit3("color_ModFolder", &color_ModFolder.x);
-        ImGui::ColorEdit3("color_Datapack", &color_Datapack.x);
-        ImGui::ColorEdit3("color_LooseFile", &color_LooseFile.x);
+        const ImVec4 color_ModFolder(0.979f, 0.523f, 0.395f, 1.000f);
+        const ImVec4 color_Datapack(0.000f, 0.764f, 1.000f, 1.000f);
+        const ImVec4 color_LooseFile(0.425f, 0.780f, 0.392f, 1.000f);
         auto ExampleModInstall_VictoryOutfit = [&]() {
             ImGuiCTX::PushStyleColor _ct(ImGuiCol_Text, color_ModFolder);
             if (ImGuiCTX::TreeNodeEx _modFld{ "VictoryOutfit/", ImGuiTreeNodeFlags_DefaultOpen }) {
